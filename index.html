@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="left">
+        <h1 id="title">Formulário</h1>
+        <p id="subtitle">Feito com HTML e CSS</p>
+    </div>
+    <div id="right">
+        <!-- TITULO DO FORMULARIO -->
+        <div id="card-title">
+            <h1>Formulário</h1>
+        </div>
+
+        <!-- CADASTRO -->
+        <form id="cadastro">
+
+            <!-- DADOS DO USUARIO -->
+            <div class="inp">
+                <input type="text" placeholder="Nome do Usuario" class="inputs" required>
+            </div>
+            <div class="inp">
+                <input type="password" name="sen" id="sen" placeholder="Coloque uma senha" class="inputs" required>
+            </div>
+            <div class="inp">
+                <input type="password" name="sen" id="con-sen" placeholder="Confirme sua senha" class="inputs" required>
+            </div>
+            <div class="inp">
+                <input type="email" name="email" id="email" placeholder="E-mail" class="inputs" required>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Telefone" class="inputs" required>
+            </div>
+
+            <!-- SEXO -->
+            <p id="sex">Sexo:</p>
+            <div class="sel-sex">
+                <div>
+                    <input type="radio" name="sexo" value="m" id="m">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" value="f" id="f">
+                    <label for="f">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" value="o" id="o">
+                    <label for="o">Outro</label>
+                </div>
+            </div>
+
+            <!-- BOTÕES -->
+            <div id="btns">
+                <button class="btn" id="enviar">Enviar</button>
+                <button class="btn" id="apagar">Apagar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
